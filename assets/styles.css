@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Rochester';
+    src: url('assets/fonts/Rochester.ttf') format('truetype');
+  }
+  
+  .my-container {
+    font-family: 'Rochester', cursive;
+}
