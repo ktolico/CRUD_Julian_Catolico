@@ -44,6 +44,7 @@ function guardarModismo() {
     if (indexEditar === null) {
         console.log("Agregar modismo");
         modismos.push(nuevoModismo);
+        Swal.fire('¡Modismo agregado correctamente!', '', 'success');
     } else {
         modismos[indexEditar] = nuevoModismo;
         indexEditar = null;
@@ -57,12 +58,26 @@ function guardarModismo() {
 
 
 function borrarTodo() {
-    console.log("Entro a borrar todo");
-    localStorage.clear();
-    modismos = [];
-    mostrarModismos();
-    alert("Se borrraron los modismos");
+    Swal.fire({
+        title: '¿Estás seguro?',
+        text: '¡No podrás revertir esto!',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí, eliminalos'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            console.log("Entro a borrar todo");
+            localStorage.clear();
+            modismos = [];
+            mostrarModismos();
+
+            Swal.fire('¡Borrado!', '¡Tus modismos han sido eliminados!', 'success');
+        }
+    });
 }
+
 
 function editarModismo(index) {
     console.log("Entro editar modismo:" + index);
