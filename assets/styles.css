@@ -3,7 +3,6 @@ body {
     background: linear-gradient(90deg, rgba(44, 73, 172, 1) 0%, rgba(86, 192, 255, 1) 100%);
 }
 
-
 header h1 {
     font-size: 70px;
     font-weight: 600;
@@ -18,19 +17,44 @@ header h1 {
     text-align: center !important;
 }
 
-.btn-outline-light:hover {
-    color: #1d12ee !important;
-    font-weight: bold;
-    box-shadow: 0 0 0 25px #0e92d3 inset;
-    -webkit-transform: scale(1);
+
+#btnGuardar {
+    border: none;
+    outline: none;
+    background-color: #1e41b3;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #33549c;
 }
 
-.btn-outline-light.btn-borrar:hover {
-    color: #ee1212 !important;
-    font-weight: bold;
-    box-shadow: 0 0 0 25px #e17272 inset;
-    -webkit-transform: scale(1);
+#btnGuardar:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #092bd1;
 }
+
+#btnBorrartodo {
+    border: none;
+    outline: none;
+    background-color: #db271a;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #e64e0c;
+}
+
+#btnBorrartodo:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #092bd1;
+}
+
+
 
 .footer {
     position: fixed;
@@ -43,5 +67,4 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
+}
