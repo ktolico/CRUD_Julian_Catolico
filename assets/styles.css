@@ -1,8 +1,8 @@
-
 body {
-    background: rgb(44,73,172);
-background: linear-gradient(90deg, rgba(44,73,172,1) 0%, rgba(86,192,255,1) 100%);
+    background: rgb(44, 73, 172);
+    background: linear-gradient(90deg, rgba(44, 73, 172, 1) 0%, rgba(86, 192, 255, 1) 100%);
 }
+
 
 header h1 {
     font-size: 70px;
@@ -14,23 +14,34 @@ header h1 {
     text-align: center;
 }
 
-
 .text-center {
     text-align: center !important;
-  }
-  
-
+}
 
 .btn-outline-light:hover {
     color: #1d12ee !important;
     font-weight: bold;
-    box-shadow:0 0 0 25px #0e92d3  inset;
+    box-shadow: 0 0 0 25px #0e92d3 inset;
     -webkit-transform: scale(1);
 }
 
 .btn-outline-light.btn-borrar:hover {
     color: #ee1212 !important;
     font-weight: bold;
-    box-shadow:0 0 0 25px #e17272  inset;
+    box-shadow: 0 0 0 25px #e17272 inset;
     -webkit-transform: scale(1);
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

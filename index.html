@@ -17,40 +17,43 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-12 mt-4 text-center">
                 <h1 class="d-flex justify-content-center text-center">¡Modismos/Expresiones para todo mundo!</h1>
-            </div>
-            <div class="col-md-12 mt-4">
                 <h3 class="text-warning border border-warning border-start rounded-end-3 rounded-start-3 text-center">
-                    ¡Escribe la expresion de tu pais y explicala!</h3>
-                <div class="mb-3">
-                    <label for="inputModismo" class="form-label text-light">Modismo</label>
-                    <input type="text" class="form-control" id="inputModismo">
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="inputPais" class="form-label text-light">Pais</label>
-                        <input type="text" class="form-control" id="inputPais">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="inputURL" class="form-label text-light">Pon aqui una imagen (URL) para explicar tu modismo</label>
-                        <input type="text" class="form-control" id="inputURL">
-                    </div>
-                </div>
-                
-                <div class="mb-3">
-                    <label for="inputExplicacion" class="form-label text-light">Explicacion</label>
-                    <textarea class="form-control" id="inputExplicacion" rows="3"></textarea>
-                </div>
-                <div class="d-grid gap-1 col-6 mx-auto">
-                    <button class="btn btn-outline-light" type="button" id="btnGuardar">Guardar</button>
-                    <button class="btn btn-outline-light btn-borrar" type="button" id="btnBorrartodo">Borrar todo</button>
-                </div>
-                <div id="divModismos"></div> <!-- Add this line for displaying modismos -->
+                    ¡Escribe la expresion de tu pais y explicala!
+                </h3>
             </div>
         </div>
+        <div class="mb-3">
+            <label for="inputModismo" class="form-label text-light">Modismo</label>
+            <input type="text" class="form-control" id="inputModismo">
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="inputPais" class="form-label text-light">Pais</label>
+                <input type="text" class="form-control" id="inputPais">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="inputURL" class="form-label text-light">Pon aqui una imagen (URL) para explicar tu modismo</label>
+                <input type="text" class="form-control" id="inputURL">
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for "inputExplicacion" class="form-label text-light">Explicacion</label>
+            <textarea class="form-control" id="inputExplicacion" rows="3"></textarea>
+        </div>
+        <div class="d-grid gap-1 col-6 mx-auto">
+            <button class="btn btn-outline-light" type="button" id="btnGuardar">Guardar</button>
+            <button class="btn btn-outline-light btn-borrar" type="button" id="btnBorrartodo">Borrar todo</button>
+        </div>
+        <div id="divModismos"></div>
     </div>
-
+    
+    <div class="footer">
+        <p>&copy;2023 Julian Catolico | All Rights Reserved</p>
+    </div>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -58,7 +61,6 @@
         crossorigin="anonymous"></script>
     <script src="assets/JS/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
 </body>
-
 </html>
+
