@@ -83,7 +83,7 @@ function editarModismo(index) {
     console.log("Entro editar modismo:" + index);
     let modismoEditar = modismos[index];
     console.log(modismoEditar, "modismoEditar");
-    inputModismo.value = modismoEditar.Modismo;
+    inputModismo.value = modismoEditar.modismo;
     inputPais.value = modismoEditar.pais;
     inputURL.value = modismoEditar.url;
     inputExplicacion.value = modismoEditar.explicacion;
